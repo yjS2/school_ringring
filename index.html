@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>종소리 울려라 종소리 울려</title>
+	<link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture&display=swap" rel="stylesheet">
+
+
+		<style type="text/css">
+			#hand {position: absolute; top: 30px; left: 1400px; width: 250px; z-index: 999;}
+			#hand:hover {opacity: 0.6;}
+			#latetvvv {position: absolute; top: 250px; margin-left: 250px; opacity: 0; background: url('latetvvv.gif'); background-size: 100% auto;}
+			#mybody{background-repeat: no-repeat;background-size: 100% auto;}
+			body {background:  url('bed.jpg');}
+			#bed {width: 100%;}
+			#sleep{position: absolute; top: 250px; left: 550px; width: 900px;}
+			#runrun{position: absolute; opacity: 0; width: 170px; top: 60px; left: 1450px;}
+			#runrun:hover {opacity: 0.3;}
+			#sd1{position: absolute; opacity: 0; width: 250px; top: 200px; margin-left: 250px;}
+			#sd2{position: absolute; opacity: 0; width: 250px; top: 500px; margin-left: 450px;}
+			#sd3{position: absolute; opacity: 0; width: 250px; top: 200px; margin-left: 650px;}
+			#sd4{position: absolute; opacity: 0; width: 250px; top: 500px; margin-left: 850px;}
+			#sd5{position: absolute; opacity: 0; width: 250px; top: 200px; margin-left: 1050px;}
+			#school1{position: absolute; opacity: 0; top: 150px; margin-left: 550px; width: 450px; border-radius: 50%; display: inline-block;}
+			#school2{position: absolute; opacity: 0; top: 400px; margin-left: 750px; border-radius: 50%; display: inline-block; width: 500px;}
+			#school3{position: absolute; opacity: 0; top: 150px; margin-left: 900px; border-radius: 50%; display: inline-block; width: 450px}
+			#school4{position: absolute; opacity: 0; top: 400px; margin-left: 1150px; border-radius: 50%; display: inline-block;  width: 400px}
+			#school5{position: absolute; opacity: 0; top: 200px; margin-left: 1400px; border-radius: 50%; display: inline-block;  width: 500px}
+			p {font-family: 'Black And White Picture', sans-serif; font-size: 25pt; text-align: center; font-style: bold;}
+			#wake { margin-top: 50px;  font-size: 100px; color: white;}
+			#ten {  margin-top: -190px; opacity: 0; color: white;}
+			#tten { margin-top: -150px; opacity: 0; font-size: 40pt; color: white;}
+			#hi01 { margin-top: -75px; padding-left: 750px; opacity: 0; position: absolute;}
+			#hi02 { margin-top: -75px; padding-left: 750px; opacity: 0; position: absolute;}
+			#hi03 { margin-top: -75px; padding-left: 500px; opacity: 0; position: absolute;}
+			#hi04 { margin-top: -75px; padding-left: 550px; opacity: 0; position: absolute;}
+			#hi05 { margin-top: -75px; padding-left: 650px; opacity: 0; position: absolute;}
+			#footer {color : white;}
+		</style>
+
+</head>
+
+<body id="mybody">
+	<p id="wake">지각쟁이를 깨워주세요!->> </p>
+	<img src="hand.gif" id="hand" class="drag">
+
+	<img src="runrun.gif" id="runrun" class="drag">
+	<audio src="flow.wav" loop id="bb"></audio>
+
+	<img src="latetvvv.gif" id="latetvvv">
+	<img src="sleep.gif" id="sleep">
+	<audio src="latetv.mp3" id="aa"></audio>
+
+	
+
+	<img src="sd1.gif" id="sd1">
+	<audio src="ring1.mp3" loop id="cc"></audio>
+
+	<img src="sd2.gif" id="sd2">
+	<audio src="ring2.mp3" loop id="dd"></audio>
+
+	<img src="sd3.gif" id="sd3">
+	<audio src="ring3.mp3" loop id="ee"></audio>
+
+	<img src="sd4.gif" id="sd4">
+	<audio src="ring4.mp3" loop id="ff"></audio>
+
+	<img src="sd5.gif" id="sd5">
+	<audio src="ring5.mp3" loop id="gg"></audio>
+
+
+	<p id="tten">지각쟁이를 얼릉 학교에 넣어주세요~! ----->>> </p>
+	<p id="ten">종소리를 듣고 지각쟁이의 학교를 맞춰보세요^^</p>
+
+	<img src="school1.jpg" id="school1">
+
+	<img src="school2.jpg" id="school2">
+	<img src="school3.jpg" id="school3">
+	<img src="school4.jpg" id="school4">
+	<img src="school5.jpg" id="school5">
+
+
+		<script type="text/javascript">
+				var astate = "off";
+			hand.onclick = function(){
+			if(astate == "off"){
+				aa.play();
+				astate = "on";
+				aa.volume = "0.1";
+			}else{
+				aa.pause();
+				astate = "off";
+			}
+				mybody.style.background = "url('latetvvv.gif')";
+				mybody.style.backgroundSize = "100% auto";
+				hand.style.opacity = "0";
+				runrun.style.opacity = "1";
+				sleep.style.opacity = "0";
+				sd1.style.opacity = "2";
+				sd1.style.zIndex = "999";
+				sd2.style.opacity = "2";
+				sd2.style.zIndex = "999";
+				sd3.style.opacity = "2";
+				sd3.style.zIndex = "999";
+				sd4.style.opacity = "2";
+				sd4.style.zIndex = "999";
+				sd5.style.opacity = "2";
+				sd5.style.zIndex = "999";
+				school1.style.opacity = "0";
+				school2.style.opacity = "0";
+				school3.style.opacity = "0";
+				school4.style.opacity = "0";
+				school5.style.opacity = "0";
+				wake.style.opacity = "0";
+				ten.style.opacity = "1";
+				tten.style.opacity = "1";
+				runrun.style.opacity = "1";
+				
+			}
+		</script>
+
+
+		<script type="text/javascript">
+			var bstate = "off";
+		runrun.onmouseover = function(){
+				bb.play();
+			}
+		</script>
+
+
+		<script type="text/javascript">
+				var cstate = "off";
+			sd1.onclick = function(){
+			if(cstate == "off"){
+				cc.play();
+				school1.style.opacity = "2";
+				sd1.style.opacity = "0";
+				ten.style.opacity = "0";
+				tten.style.opacity = "0";
+				hi01.style.opacity = "2";
+				bb.pause();
+				cstate = "on";
+			}else{
+				cc.pause();
+				bb.play();
+				school1.style.opacity = "0";
+				sd1.style.opacity = "2";
+				ten.style.opacity = "2";
+				tten.style.opacity = "2";
+				hi01.style.opacity = "0";
+				cstate = "off";
+			}
+				school2.style.opacity = "0";
+				school3.style.opacity = "0";
+				school4.style.opacity = "0";
+				school5.style.opacity = "0";
+				sd2.style.opacity = "2";
+				sd3.style.opacity = "2";
+				sd4.style.opacity = "2";
+				sd5.style.opacity = "2";
+				hi02.style.opacity = "0";
+				hi03.style.opacity = "0";
+				hi04.style.opacity = "0";
+				hi05.style.opacity = "0";
+				}
+		</script>
+
+
+		<script type="text/javascript">
+				var dstate = "off";
+			sd2.onclick = function(){
+			if(dstate == "off"){
+				dd.play();
+				school2.style.opacity = "2";
+				sd2.style.opacity = "0";
+				ten.style.opacity = "0";
+				tten.style.opacity = "0";
+				hi02.style.opacity = "2";
+				bb.pause();
+				dstate = "on";
+			}else{
+				dd.pause();
+				bb.play();
+				school2.style.opacity = "0";
+				sd2.style.opacity = "2";
+				ten.style.opacity = "2";
+				tten.style.opacity = "2";
+				hi02.style.opacity = "0";
+				dstate = "off";
+			}
+				sd1.style.opacity = "2";
+				school1.style.opacity = "0";
+				school3.style.opacity = "0";
+				school4.style.opacity = "0";
+				school5.style.opacity = "0";
+				sd3.style.opacity = "2";
+				sd4.style.opacity = "2";
+				sd5.style.opacity = "2";
+				hi03.style.opacity = "0";
+				hi01.style.opacity = "0";
+				hi04.style.opacity = "0";
+				hi05.style.opacity = "0";
+				}
+		</script>
+
+
+		<script type="text/javascript">
+				var estate = "off";
+			sd3.onclick = function(){
+			if(estate == "off"){
+				ee.play();
+				school3.style.opacity = "2";
+				sd3.style.opacity = "0";
+				ten.style.opacity = "0";
+				tten.style.opacity = "0";
+				hi03.style.opacity = "2";
+				bb.pause();
+				estate = "on";
+			}else{
+				ee.pause();
+				bb.play();
+				school3.style.opacity = "0";
+				sd3.style.opacity = "2";
+				ten.style.opacity = "2";
+				tten.style.opacity = "2";
+				hi03.style.opacity = "0";
+				estate = "off";
+			}
+				sd1.style.opacity = "2";
+				school1.style.opacity = "0";
+				school2.style.opacity = "0";
+				school4.style.opacity = "0";
+				school5.style.opacity = "0";
+				sd2.style.opacity = "2";
+				sd4.style.opacity = "2";
+				sd5.style.opacity = "2";
+				hi02.style.opacity = "0";
+				hi01.style.opacity = "0";
+				hi04.style.opacity = "0";
+				hi05.style.opacity = "0";
+				}
+		</script>
+
+
+		<script type="text/javascript">
+				var fstate = "off";
+			sd4.onclick = function(){
+			if(fstate == "off"){
+				ff.play();
+				school4.style.opacity = "2";
+				sd4.style.opacity = "0";
+				ten.style.opacity = "0";
+				tten.style.opacity = "0";
+				hi04.style.opacity = "2";
+				bb.pause();
+				fstate = "on";
+			}else{
+				ff.pause();
+				bb.play();
+				school4.style.opacity = "0";
+				sd4.style.opacity = "2";
+				ten.style.opacity = "2";
+				tten.style.opacity = "2";
+				hi04.style.opacity = "0";
+				fstate = "off";
+			}
+				sd1.style.opacity = "2";
+				school1.style.opacity = "0";
+				school2.style.opacity = "0";
+				school3.style.opacity = "0";
+				school5.style.opacity = "0";
+				sd2.style.opacity = "2";
+				sd3.style.opacity = "2";
+				sd5.style.opacity = "2";
+				hi02.style.opacity = "0";
+				hi01.style.opacity = "0";
+				hi03.style.opacity = "0";
+				hi05.style.opacity = "0";
+				}
+		</script>
+
+
+		<script type="text/javascript">
+				var gstate = "off";
+			sd5.onclick = function(){
+			if(gstate == "off"){
+				gg.play();
+				school5.style.opacity = "2";
+				sd5.style.opacity = "0";
+				ten.style.opacity = "0";
+				tten.style.opacity = "0";
+				hi05.style.opacity = "2";
+				bb.pause();
+				gstate = "on";
+			}else{
+				gg.pause();
+				bb.play();
+				school5.style.opacity = "0";
+				sd5.style.opacity = "2";
+				ten.style.opacity = "2";
+				tten.style.opacity = "2";
+				hi05.style.opacity = "0";
+				gstate = "off";
+			}
+				sd1.style.opacity = "2";
+				school1.style.opacity = "0";
+				school2.style.opacity = "0";
+				school3.style.opacity = "0";
+				school4.style.opacity = "0";
+				sd2.style.opacity = "2";
+				sd3.style.opacity = "2";
+				sd4.style.opacity = "2";
+				hi04.style.opacity = "0";
+				hi02.style.opacity = "0";
+				hi01.style.opacity = "0";
+				hi03.style.opacity = "0";
+			
+				}
+		</script>
+
+
+<script type="text/javascript">
+	//아래 코드를 삽입하면 drag 클래스가 적용된 객체들은 드래그가 가능합니다.
+	(function(){
+		var d = false;
+		var target,dx,dy;
+		var t = document.getElementsByClassName("drag");
+		for(var i=0; i<t.length; i++){
+			t[i].style.display = "block";
+			t[i].style.position = "absolute";
+			t[i].style.cursor = "pointer";
+			t[i].ondragstart = function(e){e.preventDefault();};
+			t[i].onmousedown = function(e){ d = true; dx = e.offsetX; dy = e.offsetY; target = e.target;}
+			t[i].onmouseup = function(){ d = false;}
+			window.onmousemove = function(e){ 
+				if(d){ target.style.left = (e.clientX - dx) + "px";
+					target.style.top = (e.clientY - dy) + "px";}
+			}
+		}
+	})();
+	</script>
+	
+</html>
